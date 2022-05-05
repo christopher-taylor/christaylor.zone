@@ -1,0 +1,50 @@
+@import "milligram.min.css";
+
+.text-center {
+ text-align: center;
+}
+
+.center {
+	margin: auto;
+}
+
+.print-only{
+	display: none;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.mb-0{
+	margin-bottom: 0;
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	margin: 0; 
+}
+
+@media print { 
+	header, footer, .no-print{
+		display: none
+	}
+	li, h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 0;
+	}
+	ul {
+		margin-bottom: 12px;
+	}
+	p, li {
+		font-size: 1.4rem;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.print-only{
+		display: inline-flex;
+	}
+ }
